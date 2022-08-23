@@ -11,7 +11,7 @@ body, html {
     scroll-behavior: smooth !important;
 }
 .bg {
-    background: url('/images/manhatten-bridge.JPG');
+    background: url('images\manhatten-bridge.JPG');
     height: 100vh; 
     background-position: center center;
     background-repeat: no-repeat;
