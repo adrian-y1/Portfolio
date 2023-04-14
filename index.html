@@ -49,7 +49,6 @@
                     </div>
                     <div class="home-intro-buttons">
                         <a href="#myprojects">My Projects <i class="bi bi-arrow-down"></i></a>
-                        <a href="My-Resume.pdf" download="My-Resume.pdf">Download Resume</a>
                     </div>
                 </div>
             </section>
@@ -66,9 +65,9 @@
                     <div></div>
                 </div>
                 <div class="aboutme-text">
-                    <p>I'm Adrian, a passionate 21 year old Full Stack Web Developer based in Sydney, Australia, who loves creating websites from scratch. I am continuously expanding and improving my skills as a Full Stack Web Developer to create web applications to the best of my ability.</p>
+                    <p>I'm Adrian, an enthusiastic Full Stack Web Developer based in Sydney, Australia. At 21 years old, I'm devoted to crafting engaging and dynamic websites from scratch, constantly honing my skills to create innovative and intuitive web applications.</p>
 
-                    <P>So far, iv worked with the technologies listed below to create Full Stack Web Apps and deploy them to the web.</P>
+                    <P> As a Full Stack Web Developer, I've leveraged a wide array of technologies to create and deploy robust Full Stack Web Apps. From frontend languages such as HTML, CSS, and JavaScript, to backend technologies like Ruby on Rails, and database management systems like SQLite, I'm always pushing the limits of what's possible on the web.</P>
                 </div>
                 <div class="aboutme-card-container">
                     <div class="aboutme-card-wrap">
@@ -92,6 +91,15 @@
                                 <li class="badge bg-success">Django-Channels</li>
                                 <li class="badge bg-danger">Django ORM</li>
                                 <li class="badge bg-warning text-black">Json</li>
+                                <li class="badge bg-light text-black">Ruby</li>
+                                <li class="badge bg-secondary">Ruby on Rails</li>
+                                <li class="badge bg-success">Hotwire</li>
+                                <li class="badge bg-info">Turbo Streams</li>
+                                <li class="badge bg-primary">Turbo Frames</li>
+                                <li class="badge bg-dark">Rspec</li>
+                                <li class="badge bg-danger">Capybara</li>
+                                <li class="badge bg-success">ActiveRecord</li>
+                                <li class="badge bg-warning text-black">ActiveStorage</li>
                             </ul>
                         </div>
                         <div class="aboutme-card second-card">
@@ -113,6 +121,8 @@
                                 <li class="badge bg-warning text-black">JavaScript</li>
                                 <li class="badge bg-secondary text-white">Fetch (JS)</li>
                                 <li class="badge bg-dark">DOM Manipulation (JS)</li>
+                                <li class="badge bg-danger">Stimulus</li>
+                                <li class="badge bg-info">ERB</li>
                             </ul>
                         </div>
                         <div class="aboutme-card third-card">
@@ -130,6 +140,7 @@
                                 <li class="badge bg-secondary">Amazon Web Services</li>
                                 <li class="badge bg-danger">Heroku CLI</li>
                                 <li class="badge bg-warning text-black">Git Version Control</li>
+                                <li class="badge bg-info">Github</li>
                             </ul>
                         </div>
                     </div>
@@ -145,11 +156,21 @@
                 <div class="myprojects-header-border">
                     <div></div>
                 </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <div class="btn-group w-75 d-flex flex-wrap" id="myprojects-btn-container" role="group" aria-label="Project Filters">
+                        <button class="btn btn-outline-light active" onclick="filterSelection('all'); makeActive(this)">All</button>
+                      <button class="btn btn-outline-light" onclick="filterSelection('django'); makeActive(this)">Django</button>
+                      <button class="btn btn-outline-light" onclick="filterSelection('rails'); makeActive(this)">Ruby on Rails</button>
+                      <button class="btn btn-outline-light" onclick="filterSelection('ruby'); makeActive(this)">Ruby</button>
+                      <button class="btn btn-outline-light" onclick="filterSelection('html-css-js'); makeActive(this)">HTML, CSS & JavaScript</button>
+                    </div>
+                </div>
+                                                 
                 <div class="myprojects-card-container">
                     <div class="myprojects-card-wrap">
 
-                        <!-- Card 1 -->
-                        <div class="card myprojects-card first-card-mp">
+                        <!-- Card 1 --- ChatNet App -->
+                        <div class="card myprojects-card first-card-mp filterProject django">
                             <div class="myprojects-card-img-con">
                                 <img src="images/chatnet-img.PNG" class="card-img-top" alt="ChatNet Image">
                                 <div class="myprojects-card-btns">
@@ -172,8 +193,8 @@
                         </div>
 
                         
-                        <!-- Card 2 -->
-                        <div class="card myprojects-card second-card-mp">
+                        <!-- Card 2 --- Social Front App-->
+                        <div class="card myprojects-card second-card-mp filterProject django">
                             <div class="myprojects-card-img-con">
                                 <img src="images/socialfront-img.PNG" class="card-img-top" alt="SocialFront Image">
                                 <div class="myprojects-card-btns">
@@ -196,10 +217,10 @@
                         </div>
 
                         
-                        <!-- Card 3 -->
-                        <div class="card myprojects-card third-card-mp">
+                        <!-- Card 3 --- Shopikart App -->
+                        <div class="card myprojects-card third-card-mp filterProject django">
                             <div class="myprojects-card-img-con">
-                                <img src="images/shopikart-img.PNG" class="card-img-top" alt="ChatNet Image">
+                                <img src="images/shopikart-img.PNG" class="card-img-top" alt="Shopikart Image">
                                 <div class="myprojects-card-btns">
                                     <a href="https://github.com/adrian-y1/Shopikart" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
                                     <a href="https://shopikartio.herokuapp.com" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Website</span></a>
@@ -218,6 +239,213 @@
                                 </div>
 
                                
+                            </div>
+                        </div>
+
+                        <!-- Card 4 --- Ruby Chess CLI -->
+                        <div class="card myprojects-card first-card-mp filterProject ruby">
+                            <div class="myprojects-card-img-con">
+                                <img src="images/chess_demo2.gif" class="card-img-top" alt="Chess Image" style="height: 171px;">
+                                <div class="myprojects-card-btns">
+                                    <a href="https://github.com/adrian-y1/TOPChess" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                    <a href="https://replit.com/@adrian-y1/TOPChess" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Live</span></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <img src="images/chess.png" alt="">
+                                    Chess (CLI)
+                                </h4>
+                                <p class="card-text">A two-player Chess game created with Ruby, implemented as a command-line interface (CLI). </p>
+                                
+                                <!-- Modal Button -->
+                                <div class="card-view-details">
+                                    <button class="modal-btn" data-bs-toggle="modal" data-bs-target="#chessModal"> More Details <i class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 5 --- Facebook Clone App -->
+                        <div class="card myprojects-card second-card-mp filterProject rails">
+                            <div class="myprojects-card-img-con">
+                                <h3 style="padding: 60px 0 60px 0;" class="text-center">In Development</h3>
+
+                                <div class="myprojects-card-btns">
+                                    <a href="https://github.com/adrian-y1/odin-facebook" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                    <!-- <a href="#" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Website</span></a> -->
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Facebook Clone
+                                </h4>
+                                <p class="card-text">A Facebook clone app created using Ruby on Rails and several powerful libraries such as Hotwire, Turbo, Stimulus, ActiveStorage, and more.</p>
+
+                                <!-- Modal Button -->
+                                <div class="card-view-details">
+                                    <button class="modal-btn" data-bs-toggle="modal" data-bs-target="#facebookCloneModal"> More Details <i class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 --- Connect Four CLI -->
+                        <div class="card myprojects-card second-card-mp filterProject ruby">
+                            <div class="myprojects-card-img-con">
+                                <img src="images/connect_four.gif" class="card-img-top" alt="Connect Four Image" style="height: 171px;">
+                                <div class="myprojects-card-btns">
+                                    <a href="https://github.com/adrian-y1/TOPConnectFour" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                    <a href="https://replit.com/@adrian-y1/ConnectFour" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Live</span></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <img src="images/connect-four.png" alt="">
+                                    Connect Four (CLI)
+                                </h4>
+                                <p class="card-text">A classic Connect Four game implemented as a Ruby CLI, allowing two players to play against each other.</p>
+                                
+                                <!-- Modal Button -->
+                                <div class="card-view-details">
+                                    <button class="modal-btn" data-bs-toggle="modal" data-bs-target="#connectFourModal"> More Details <i class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 7 --- TicTacToe CLI -->
+                        <div class="card myprojects-card third-card-mp filterProject ruby">
+                            <div class="myprojects-card-img-con">
+                                <img src="images/tictactoe.gif" class="card-img-top" alt="TicTacToe GIF" style="height: 171px;">
+                                <div class="myprojects-card-btns">
+                                    <a href="https://github.com/adrian-y1/TOPTicTacToe" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                    <a href="https://replit.com/@adrian-y1/TicTacToe" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Live</span></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <img src="images/tictactoe.png" alt="">
+                                    TicTacToe (CLI)
+                                </h4>
+                                <p class="card-text">A classic game of Tic Tac Toe implemented as a Ruby CLI, allowing two players to play against each other.</p>
+                                
+                                <!-- Modal Button -->
+                                <div class="card-view-details">
+                                    <button class="modal-btn" data-bs-toggle="modal" data-bs-target="#ticTacToeModal"> More Details <i class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                       <!-- Card 8 --- Hangman CLI -->
+                       <div class="card myprojects-card first-card-mp filterProject ruby">
+                            <div class="myprojects-card-img-con">
+                                <img src="images/hangman.gif" class="card-img-top" alt="Hangman GIF" style="height: 171px;">
+                                <div class="myprojects-card-btns">
+                                    <a href="https://github.com/adrian-y1/TOPHangman" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                    <a href="https://replit.com/@adrian-y1/TOPHangman" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Live</span></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <img src="images/hangman.png" alt="">
+                                    Hangman (CLI)
+                                </h4>
+                                <p class="card-text"> A single-player CLI Hangman game where the player attempts to guess a randomly selected secret word by guessing one letter at a time.</p>
+                                
+                                <!-- Modal Button -->
+                                <div class="card-view-details">
+                                    <button class="modal-btn" data-bs-toggle="modal" data-bs-target="#hangmanModal"> More Details <i class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 9 --- Admin Dashboard Template -->
+                        <div class="card myprojects-card first-card-mp filterProject html-css-js">
+                            <div class="myprojects-card-img-con">
+                                <img src="images/admin_dashboard.PNG" class="card-img-top" alt="admin dashboard image" style="height: 171px;">
+                                <div class="myprojects-card-btns">
+                                    <a href="https://github.com/adrian-y1/TOP-Admin-Dashboard" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                    <a href="https://adrian-y1.github.io/TOP-Admin-Dashboard/" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Website</span></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <img src="images/dashboard.svg" alt="">
+                                    Admin Dashboard
+                                </h4>
+                                <p class="card-text">This Admin Dashboard template is a static web page that has been developed using HTML and CSS.</p>
+                                
+                                <!-- Modal Button -->
+                                <div class="card-view-details">
+                                    <button class="modal-btn" data-bs-toggle="modal" data-bs-target="#adminDashboardTemplateModal"> More Details <i class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 10 --- Rock Paper Scissors -->
+                        <div class="card myprojects-card second-card-mp filterProject html-css-js">
+                            <div class="myprojects-card-img-con">
+                                <img src="images/rock-paper-scissors-website.PNG" class="card-img-top" alt="Rock Paper Scissors" style="height: 171px;">
+                                <div class="myprojects-card-btns">
+                                    <a href="https://github.com/adrian-y1/TOP-RockPaperScissors" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                    <a href="https://adrian-y1.github.io/TOP-RockPaperScissors/" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Website</span></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <img src="images/rock-paper-scissors.png" alt="">
+                                    Rock Paper Scissors
+                                </h4>
+                                <p class="card-text"> A Rock Paper Scissors game website where players can choose between rock, paper, or scissors and play against the computer.</p>
+                                
+                                <!-- Modal Button -->
+                                <div class="card-view-details">
+                                    <button class="modal-btn" data-bs-toggle="modal" data-bs-target="#rpsModal"> More Details <i class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 11 --- Etch-a-Sketch -->
+                        <div class="card myprojects-card third-card-mp filterProject html-css-js">
+                            <div class="myprojects-card-img-con">
+                                <img src="images/etch-a-sketch-website.PNG" class="card-img-top" alt="Paint" style="height: 171px;">
+                                <div class="myprojects-card-btns">
+                                    <a href="https://github.com/adrian-y1/TOP-Etch-a-Sketch" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                    <a href="https://adrian-y1.github.io/TOP-Etch-a-Sketch/" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Website</span></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <img src="images/paint-palette.png" alt="">
+                                    Etch-a-Sketch
+                                </h4>
+                                <p class="card-text"> Etch-a-Sketch is a web application that allows users to draw and sketch using their computer mouse.</p>
+                                
+                                <!-- Modal Button -->
+                                <div class="card-view-details">
+                                    <button class="modal-btn" data-bs-toggle="modal" data-bs-target="#etchASketchModal"> More Details <i class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 12 --- Calculator -->
+                        <div class="card myprojects-card first-card-mp filterProject html-css-js">
+                            <div class="myprojects-card-img-con">
+                                <img src="images/calculator-website.PNG" class="card-img-top" alt="Calculator" style="height: 171px;">
+                                <div class="myprojects-card-btns">
+                                    <a href="https://github.com/adrian-y1/TOP-Calculator" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                    <a href="https://adrian-y1.github.io/TOP-Calculator/" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Website</span></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <img src="images/calculator.png" alt="">
+                                    Calculator
+                                </h4>
+                                <p class="card-text">A calculator app that allows users to perform arithmetic operations and has a user-friendly interface.</p>
+                                
+                                <!-- Modal Button -->
+                                <div class="card-view-details">
+                                    <button class="modal-btn" data-bs-toggle="modal" data-bs-target="#calculatorModal"> More Details <i class="bi bi-caret-right-fill"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -378,7 +606,6 @@
                     </div>
                 </div>
 
-
                 <!-- Shopikart Modal -->
                 <div class="modal fade" id="shopikartModal" tabindex="-1" aria-labelledby="shopikartModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
@@ -451,12 +678,601 @@
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS"/>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" title="Bootstrap"/>
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript"/>
-
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Chess Modal -->
+                <div class="modal fade" id="chessModal" tabindex="-1" aria-labelledby="chessModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center" id="chessModalLabel" style="width: 100%;"><img src="images/chess.png" alt="Chess Logo" width="40px" height="40px"> Chess (CLI) </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="myprojects-card-img-con">
+                                    <img src="images/chess_demo2.gif" class="card-img-top" alt="Chess Image">
+                                    <div class="myprojects-card-btns">
+                                        <a href="https://github.com/adrian-y1/TOPChess" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                        <a href="https://replit.com/@adrian-y1/TOPChess" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Live</span></a>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 bg-light">
+                                    <div class="card-header bg-dark border-dark text-white">
+                                        Instructions:
+                                    </div>
+                                    <div class="card-body">
+                                        Upon visiting the <a href=" https://replit.com/@adrian-y1/TOPChess" target="_blank">replit</a> to view the game live, press on the <code>Run</code> button to start playing.
+                                    </div>
+                                </div>
+                                <div class="card mt-3">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            This Chess game is the final project i created whilst taking <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby" target="_blank">The Odin Project's Ruby course</a> inside <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails" target="_blank">The Odin Project's Ruby on Rails Curriculum</a>. It is a two-player game created with Ruby, and implemented as a command-line interface (CLI) that allows players to make moves and interact with the game board directly through the terminal.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-danger  mt-3">
+                                    <div class="card-header bg-danger text-white ">
+                                        Difficulties:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            Throughout the development of my Ruby Chess game, I encountered various difficulties that tested my problem-solving abilities to the fullest. Among the most daunting challenges was the calculation of legal movements for each game piece, with the Pawn class being particularly difficult due to its unique set of moves that differ from all other pieces.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-success mt-3">
+                                    <div class="card-header bg-success  text-white ">
+                                        Solution:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            Effective planning both prior to and during implementation proved critical in enabling me to overcome the various challenges that emerged throughout the project. To assist in breaking down and calculating the potential movements of each game piece, I found it helpful to simulate board movements on a virtual chess board, such as <a href="https://lichess.org/editor" target="_blank">lichess</a>, which allowed me to visualize the possible moves more clearly.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-info mt-3">
+                                    <div class="card-header bg-info">
+                                        Key Features:
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Check</li>
+                                        <li class="list-group-item">Checkmate, Stalemate & Resignation (forfeit)</li>
+                                        <li class="list-group-item">Castling</li>
+                                        <li class="list-group-item">Promotion</li>
+                                        <li class="list-group-item">Save Game & Load Saved Game</li>
+                                        <li class="list-group-item">Visual board indication of valid piece moves & captures</li>
+                                        <li class="list-group-item">Various Tests created with Rspec</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-light border-light text-center modal-card-footer">
+                                <h6>Created With:</h6>   
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" title="Ruby"/>               
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rspec/rspec-original.svg" title="RSpec"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facebook Clone Modal -->
+                <div class="modal fade" id="facebookCloneModal" tabindex="-1" aria-labelledby="facebookCloneModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center" id="facebookCloneModalLabel" style="width: 100%;">
+                                    Facebook Clone (In Development)
+                                    <!-- <img src="images/chess.png" alt="Chess Logo" width="40px" height="40px"> Chess (CLI)  -->
+                                </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="myprojects-card-img-con">
+                                    <!-- <img src="images/chess_demo2.gif" class="card-img-top" alt="Chess Image"> --> 
+                                    <h3 style="padding: 50px 0 50px 0;" class="text-center">In Development</h3>
+                                    <div class="myprojects-card-btns">
+                                        <a href="https://github.com/adrian-y1/odin-facebook" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                        <!-- <a href="#" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Live</span></a> -->
+                                    </div>
+                                </div>
+                                <div class="card mt-3">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            I am currently developing a Facebook clone app using Ruby on Rails and several powerful libraries such as Hotwire, Turbo, Stimulus, ActiveStorage, and more. With this app, users will be able to create profiles, post content, comment on posts, connect with friends, and much more, just like they would on the real Facebook platform. The app is designed to be intuitive, user-friendly, and responsive, providing a seamless experience for users across all devices. Stay tuned for updates on this exciting project!
+
+                                            This project is being created as the final project of <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails" target="_blank">The Odin Project's Ruby on Rails course</a> inside <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails" target="_blank">The Odin Project's Ruby on Rails Curriculum</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-danger  mt-3">
+                                    <div class="card-header bg-danger text-white ">
+                                        Difficulties:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-success mt-3">
+                                    <div class="card-header bg-success  text-white ">
+                                        Solution:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-info mt-3">
+                                    <div class="card-header bg-info">
+                                        Key Features:
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <!-- <li class="list-group-item">Check</li>
+                                        <li class="list-group-item">Checkmate, Stalemate & Resignation (forfeit)</li>
+                                        <li class="list-group-item">Castling</li>
+                                        <li class="list-group-item">Promotion</li>
+                                        <li class="list-group-item">Save Game & Load Saved Game</li>
+                                        <li class="list-group-item">Visual board indication of valid piece moves & captures</li>
+                                        <li class="list-group-item">Various Tests created with Rspec</li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-light border-light text-center modal-card-footer">
+                                <h6>Created With:</h6>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Connect Four Modal -->
+                <div class="modal fade" id="connectFourModal" tabindex="-1" aria-labelledby="connectFourModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center" id="connectFourModalLabel" style="width: 100%;"><img src="images/connect-four.png" alt="Connect Four Logo" width="40px" height="40px"> Connect Four (CLI) </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="myprojects-card-img-con">
+                                    <img src="images/connect_four.gif" class="card-img-top" alt="Connect Four Image">
+                                    <div class="myprojects-card-btns">
+                                        <a href="https://github.com/adrian-y1/TOPConnectFour" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                        <a href="https://replit.com/@adrian-y1/ConnectFour" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Live</span></a>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 bg-light">
+                                    <div class="card-header bg-dark border-dark text-white">
+                                        Instructions:
+                                    </div>
+                                    <div class="card-body">
+                                        Upon visiting the <a href=" https://replit.com/@adrian-y1/ConnectFour" target="_blank">replit</a> to view the game live, enter <code>ruby lib/main.rb</code> in the terminal window to start playing.
+                                    </div>
+                                </div>
+                                <div class="card mt-3">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            This Connect Four game is a classic implementation of the popular board game, built as a command-line interface (CLI) using the Ruby programming language. The game allows two players to play against each other, taking turns to place their colored tokens on the board in an attempt to form a line of four consecutive tokens either horizontally, vertically, or diagonally. This project was part of <a href="https://www.theodinproject.com/lessons/ruby-connect-four" target="_blank">The Odin Project's Ruby course</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-danger  mt-3">
+                                    <div class="card-header bg-danger text-white ">
+                                        Difficulties:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            During the implementation of this project, I faced a significant challenge while figuring out the logic for the diagonal win. It was particularly challenging because diagonal check required checking four different scenarios: bottom-left to top-right, bottom-right to top-left, top-left to bottom-right, and top-right to bottom-left. Initially, it was difficult to wrap my head around how it would work.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-success mt-3">
+                                    <div class="card-header bg-success  text-white ">
+                                        Solution:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            When I faced the challenge of implementing the diagonal win check condition in this project, I approached it with careful planning and a systematic approach. I started by drawing out each possible diagonal scenario on paper to visualize the logic needed for each case. Hardcoding the scenarios initially helped to solidify my understanding of what was required to solve the problem. Additionally, I sought assistance from the supportive community on <a href="https://discord.gg/V75WSQG">The Odin Project's discord</a>, which provided helpful insights and guidance to help me overcome this problem.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-info mt-3">
+                                    <div class="card-header bg-info">
+                                        Key Features:
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Two-player game</li>
+                                        <li class="list-group-item">Color-coded discs for each player</li>
+                                        <li class="list-group-item">Interactive gameplay through command-line interface</li>
+                                        <li class="list-group-item">Vertical, horizontal, and diagonal win conditions</li>
+                                        <li class="list-group-item">Error handling for invalid inputs or moves</li>
+                                        <li class="list-group-item">Display of the game board after each turn</li>
+                                        <li class="list-group-item">Class method tests using `Rspec`</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-light border-light text-center modal-card-footer">
+                                <h6>Created With:</h6>   
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" title="Ruby"/>               
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rspec/rspec-original.svg" title="RSpec"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TicTacToe Modal -->
+                <div class="modal fade" id="ticTacToeModal" tabindex="-1" aria-labelledby="ticTacToeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center" id="ticTacToeModalLabel" style="width: 100%;"><img src="images/tictactoe.png" alt="TicTacToe Logo" width="40px" height="40px"> TicTacToe (CLI) </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="myprojects-card-img-con">
+                                    <img src="images/tictactoe.gif" class="card-img-top" alt="TicTacToe gif">
+                                    <div class="myprojects-card-btns">
+                                        <a href="https://github.com/adrian-y1/TOPTicTacToe" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                        <a href=" https://replit.com/@adrian-y1/TicTacToe" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Live</span></a>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 bg-light">
+                                    <div class="card-header bg-dark border-dark text-white">
+                                        Instructions:
+                                    </div>
+                                    <div class="card-body">
+                                        Upon visiting the <a href=" https://replit.com/@adrian-y1/TicTacToe" target="_blank">replit</a> to view the game live, enter <code>ruby lib/game.rb</code> in the terminal window to start playing.
+                                    </div>
+                                </div>
+                                <div class="card mt-3">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            This Tic Tac Toe game implemented as a Ruby CLI allows two players to compete against each other by taking turns inputting their game pieces (X & O) into numbered squares displayed on the board. The objective is to have three of one's own pieces in a horizontal, vertical, or diagonal line while preventing the opponent from achieving the same. This project was part of <a targe="_blank" href="https://www.theodinproject.com/lessons/ruby-tic-tac-toe" target="_blank">The Odin Project's Ruby course</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-danger  mt-3">
+                                    <div class="card-header bg-danger text-white ">
+                                        Difficulties:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            Developing this TicTacToe game presented a significant challenge, as it was the first sizeable Ruby project I tackled that required handling complex logic. After receiving feedback, I realized that I had not followed the principles of object-oriented programming (OOP) and therefore had to rebuild the entire game with OOP in mind. One of the most difficult parts was understanding the necessary logic for checking wins on the game board.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-success mt-3">
+                                    <div class="card-header bg-success  text-white ">
+                                        Overcoming Difficulties:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            After receiving feedback on my initial TicTacToe implementation from the <a href="https://discord.gg/ruby-518658712081268738" target="_blank">Ruby discord community</a>, I realized that it did not follow OOP principles. To gain a better understanding of OOP, I sought help from community members who explained in detail the things I had done and what I could do to improve my code. I also did additional reading and watched videos on OOP with Ruby to further enhance my understanding.
+                                            <br> <br>
+                                            To tackle the difficulties in checking for TicTacToe win conditions, I carefully planned and drew out the different scenarios on paper to better visualize and understand them. This helped me come up with a more structured approach to solving the problem.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-info mt-3">
+                                    <div class="card-header bg-info">
+                                        Key Features:
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Two-player game</li>
+                                        <li class="list-group-item">Interactive gameplay through command-line interface</li>
+                                        <li class="list-group-item">Vertical, horizontal, and diagonal win conditions</li>
+                                        <li class="list-group-item">Error handling for invalid inputs or moves</li>
+                                        <li class="list-group-item">Display of the game board after each turn</li>
+                                        <li class="list-group-item">Class method tests using `Rspec`</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-light border-light text-center modal-card-footer">
+                                <h6>Created With:</h6>   
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" title="Ruby"/>               
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rspec/rspec-original.svg" title="RSpec"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hangman Modal -->
+                <div class="modal fade" id="hangmanModal" tabindex="-1" aria-labelledby="hangmanModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center" id="hangmanModalLabel" style="width: 100%;"><img src="images/hangman.png" alt="hangman Logo" width="40px" height="40px"> Hangman (CLI) </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="myprojects-card-img-con">
+                                    <img src="images/hangman.gif" class="card-img-top" alt="hangman gif">
+                                    <div class="myprojects-card-btns">
+                                        <a href="https://github.com/adrian-y1/TOPHangman" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                        <a href=" https://replit.com/@adrian-y1/TOPHangman" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Live</span></a>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 bg-light">
+                                    <div class="card-header bg-dark border-dark text-white">
+                                        Instructions:
+                                    </div>
+                                    <div class="card-body">
+                                        Upon visiting the <a href=" https://replit.com/@adrian-y1/TOPHangman" target="_blank">replit</a> to view the game live, enter <code>ruby lib/hangman.rb</code> in the terminal window to start playing.
+                                    </div>
+                                </div>
+                                <div class="card mt-3">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            This Hangman game is a command-line interface (CLI) game implemented using Ruby 3.1. It is a single-player game where the player attempts to guess a randomly selected secret word by guessing one letter at a time. The player has a limited number of guesses (6) before the game ends. This project was part of <a targe="_blank" href="https://www.theodinproject.com/lessons/ruby-hangman" target="_blank">The Odin Project's Ruby course</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-danger  mt-3">
+                                    <div class="card-header bg-danger text-white ">
+                                        Difficulties:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            Throughout the development process of this Hangman CLI game with Ruby, there were not many major challenges. However, one difficulty that arose was related to the implementation of a feature to load a previously saved game. Initially, I struggled to figure out how to implement this feature as it involved handling file input/output and serialization in Ruby as it was still a relatively new concept for me.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-success mt-3">
+                                    <div class="card-header bg-success  text-white ">
+                                        Overcoming Difficulties:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            To overcome the difficulty of loading a saved game, I researched more about file input/output and serialization with Ruby. I carefully read through the Ruby documentation and various online resources to gain a better understanding of how these concepts work. Eventually, I was able to implement the feature successfully by using the YAML module in Ruby to serialize and deserialize the game data to and from a file.
+                                            <br> <br>
+                                            With this solution in place, users can now save their current game state and resume the game at a later time.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-info mt-3">
+                                    <div class="card-header bg-info">
+                                        Key Features:
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Single-player game</li>
+                                        <li class="list-group-item">Limited Guesses (6 lives)</li>
+                                        <li class="list-group-item">Interactive gameplay through command-line interface</li>
+                                        <li class="list-group-item">Saving a game</li>
+                                        <li class="list-group-item">Loading a game</li>
+                                        <li class="list-group-item">Error handling for invalid inputs</li>
+                                        <li class="list-group-item">Display of correct & incorrect guesses</li>
+                                        <li class="list-group-item">Progress displayed after each guess</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-light border-light text-center modal-card-footer">
+                                <h6>Created With:</h6>   
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" title="Ruby"/>               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Admin Dashboard Template Modal -->
+                <div class="modal fade" id="adminDashboardTemplateModal" tabindex="-1" aria-labelledby="adminDashboardTemplateModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center" id="adminDashboardTemplateModalLabel" style="width: 100%;"><img src="images/dashboard.svg" alt="adminDashboardTemplate Logo" width="40px" height="40px"> Admin Dashboard </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="myprojects-card-img-con">
+                                    <img src="images/admin_dashboard.PNG" class="card-img-top" alt="adminDashboardTemplate gif">
+                                    <div class="myprojects-card-btns">
+                                        <a href="https://github.com/adrian-y1/TOP-Admin-Dashboard" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                        <a href="https://adrian-y1.github.io/TOP-Admin-Dashboard/" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Website</span></a>
+                                    </div>
+                                </div>
+                                <div class="card mt-3">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            This Admin Dashboard template is the final project of <a href="https://www.theodinproject.com/lessons/intermediate-html-and-css-admin-dashboard" target="_blank">The Odin Project's Intermediate HTML & CSS Course</a>. It is a one-page static website created using HTML and CSS Grid. The website's layout and design were structured with CSS Grid, while Flexbox was used briefly to position some items.
+                                            <br><br>
+                                            This dashboard template includes a responsive design that adapts to different screen sizes, making it accessible on desktop, tablet, and mobile devices. The dashboard provides an organized and clean interface for managing projects, with various sections displaying relevant information such as announcements, users and more.
+                                            <br><br>
+                                            This project helped enhance my skills in HTML and CSS, but mainly CSS Grid, and provided valuable experience in creating a responsive website that meets modern design standards.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-light border-light text-center modal-card-footer">
+                                <h6>Created With:</h6>   
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rock Paper Scissors Modal -->
+                <div class="modal fade" id="rpsModal" tabindex="-1" aria-labelledby="rpsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center" id="rpsModalLabel" style="width: 100%;"><img src="images/rock-paper-scissors.png" alt="rps Logo" width="40px" height="40px"> Hangman (CLI) </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="myprojects-card-img-con">
+                                    <img src="images/rock-paper-scissors-website.PNG" class="card-img-top" alt="rps gif">
+                                    <div class="myprojects-card-btns">
+                                        <a href="https://github.com/adrian-y1/TOP-RockPaperScissors" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                        <a href="https://adrian-y1.github.io/TOP-RockPaperScissors/" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Live</span></a>
+                                    </div>
+                                </div>
+                                <div class="card mt-3">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            This website is a digital version of the classic game, Rock Paper Scissors, allowing players to compete against a computer opponent. The game is built using HTML, CSS, and JavaScript, with a responsive design that works on various screen sizes. Players can choose their move (rock, paper, or scissors) by clicking the corresponding button on the screen, and the computer opponent will randomly select its move. This project was part of <a targe="_blank" href="https://www.theodinproject.com/lessons/foundations-rock-paper-scissors" target="_blank">The Odin Project's Foundation course</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-danger  mt-3">
+                                    <div class="card-header bg-danger text-white ">
+                                        Difficulties:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            Although the development of this project was not overly difficult, there were still some challenges that I faced along the way. One of the main difficulties was the need to use a large number of if statements to implement the game's logic, which required careful consideration and planning to ensure that the code was both efficient and effective.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-success mt-3">
+                                    <div class="card-header bg-success  text-white ">
+                                        Overcoming Difficulties:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            Despite this, I was able to overcome these challenges through careful planning and attention to detail, and was able to successfully create a functional and enjoyable Rock Paper Scissors game
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-info mt-3">
+                                    <div class="card-header bg-info">
+                                        Key Features:
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Single-player game</li>
+                                        <li class="list-group-item">Responsive</li>
+                                        <li class="list-group-item">User-friendly UI</li>
+                                        <li class="list-group-item">Visually appealing</li>
+                                        <li class="list-group-item">Computer Opponent</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-light border-light text-center modal-card-footer">
+                                <h6>Created With:</h6>   
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" title="Bootstrap"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript"/>              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Etch-a-Sketch Modal -->
+                <div class="modal fade" id="etchASketchModal" tabindex="-1" aria-labelledby="etchASketchModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center" id="etchASketchModalLabel" style="width: 100%;"><img src="images/paint-palette.png" alt="etchASketch Logo" width="40px" height="40px"> Etch-a-Sketch </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="myprojects-card-img-con">
+                                    <img src="images/etch-a-sketch-website.PNG" class="card-img-top" alt="etchASketch">
+                                    <div class="myprojects-card-btns">
+                                        <a href="https://github.com/adrian-y1/TOP-Etch-a-Sketch" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                        <a href="https://adrian-y1.github.io/TOP-Etch-a-Sketch/" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Live</span></a>
+                                    </div>
+                                </div>
+                                <div class="card mt-3">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            Etch-a-Sketch is an entertaining and interactive drawing application that brings back the nostalgia of the classic Etch-a-Sketch toy. With this app, users can unleash their creativity by drawing on a virtual canvas with a cursor that draws according to their mouse button clicks being held down. The app offers a range of advanced features such as changing cursor colors, resizing the canvas, and erasing mistakes. This project was part of <a targe="_blank" href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch" target="_blank">The Odin Project's Foundation course</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-danger  mt-3">
+                                    <div class="card-header bg-danger text-white ">
+                                        Difficulties:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            At the beginning of the project, I found it challenging to create a grid layout with rows and columns that would be suitable for the pixels in each grid.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-success mt-3">
+                                    <div class="card-header bg-success  text-white ">
+                                        Overcoming Difficulties:
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            I started by researching different grid systems and experimenting with various CSS properties. After some testing, I found the CSS properties that worked well for creating the desired layout. Additionally, I utilized for loops in JavaScript to dynamically generate each pixel in the grid of the canvas as well as making the rows and columns of the grid based on user input. By breaking down the problem into smaller, manageable tasks and utilizing available resources, I was able to successfully overcome the initial difficulties and create a functional Etch-a-Sketch app.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-info mt-3">
+                                    <div class="card-header bg-info">
+                                        Key Features:
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Multiple canvas grid sizes to choose from</li>
+                                        <li class="list-group-item">Responsive design for optimal viewing on different devices</li>
+                                        <li class="list-group-item">Eraser tool for easy correction of mistakes</li>
+                                        <li class="list-group-item">Clear board option to start over</li>
+                                        <li class="list-group-item">Customizable pen color options to create colorful artwork</li>
+                                        <li class="list-group-item">Drawing feature activated upon holding down the mouse button for added control and precision.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-light border-light text-center modal-card-footer">
+                                <h6>Created With:</h6>   
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript"/>              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculator Modal -->
+                <div class="modal fade" id="calculatorModal" tabindex="-1" aria-labelledby="calculatorModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center" id="calculatorModalLabel" style="width: 100%;"><img src="images/calculator.png" alt="calculator Logo" width="40px" height="40px"> Calculator </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="myprojects-card-img-con">
+                                    <img src="images/calculator-website.PNG" class="card-img-top" alt="calculator">
+                                    <div class="myprojects-card-btns">
+                                        <a href="https://github.com/adrian-y1/TOP-Calculator" target="_blank" class="btn btn-light"><i class="bi bi-github"></i><span>Code</span></a>
+                                        <a href="https://adrian-y1.github.io/TOP-Calculator/" target="_blank" class="btn btn-light"><i class="bi bi-box-arrow-up-right"></i><span>View Live</span></a>
+                                    </div>
+                                </div>
+                                <div class="card mt-3">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            This is a simple and user-friendly calculator application that allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator has a clean and minimalistic design that is easy to navigate, and users can use both the mouse and keyboard to enter numbers and operators. The app also features a large display screen that shows the user's input and the result of the calculation. This project was part of <a targe="_blank" href="https://www.theodinproject.com/lessons/foundations-calculator" target="_blank">The Odin Project's Foundation course</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-info mt-3">
+                                    <div class="card-header bg-info">
+                                        Key Features:
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Addition, subtraction, multiplication, and division operations</li>
+                                        <li class="list-group-item">Decimal numbers</li>
+                                        <li class="list-group-item">Keyboard Input</li>
+                                        <li class="list-group-item">Clear button</li>
+                                        <li class="list-group-item">Visually appealing interface</li>
+                                        <li class="list-group-item">Syntax Error checks</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-light border-light text-center modal-card-footer">
+                                <h6>Created With:</h6>   
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" title="Bootstrap"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript"/>              
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <div class="contact" id="contact">
@@ -474,16 +1290,7 @@
                               </svg>
                         </div>
                         <h6>Email</h6>
-                        <p>Adrian.yonan1@gmail.com</p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                              </svg>
-                        </div>
-                        <h6>Phone</h6>
-                        <p>0422165634</p>
+                        <p>adriany.webdev@gmail.com</p>
                     </div>
                     <div class="contact-card">
                         <div class="contact-icon">
@@ -492,7 +1299,7 @@
                               </svg>
                         </div>
                         <h6>Discord</h6>
-                        <p><a href="https://discordapp.com/users/244605817276334080">Adrlan</a></p>
+                        <p><a href="https://discordapp.com/users/244605817276334080" target=”_blank”>Adrlan</a></p>
                     </div>
                     <div class="contact-card">
                         <div class="contact-icon">
@@ -501,22 +1308,13 @@
                               </svg>
                         </div>
                         <h6>Github</h6>
-                        <p><a href="https://github.com/adrian-y1">adrian-y1</a></p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
-                                <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-                                <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
-                              </svg>
-                        </div>
-                        <h6>Resume</h6>
-                        <p><a href="My-Resume.pdf" download="My-Resume.pdf">Download Resume</a></p>
+                        <p><a href="https://github.com/adrian-y1" target=”_blank”>adrian-y1</a></p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>
